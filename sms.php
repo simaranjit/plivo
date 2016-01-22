@@ -15,15 +15,17 @@ class sms
     private $PHONE_NUMBER;
     
     /**
-     * Auth ID, Auth Token and Phone number needs to be configured here
+     * @param string $authID
+     * @param string $authToken
+     * @param string $phoneNumber
      */
-    public function __construct()
+    public function __construct($authID, $authToken, $phoneNumber)
     {
         // Configure keys here
         
-        $this->AUTH_ID      = 'HERE';
-        $this->AUTH_TOKEN   = 'HERE';
-        $this->PHONE_NUMBER = 'HERE';
+        $this->AUTH_ID      = $authID;
+        $this->AUTH_TOKEN   = $authToken;
+        $this->PHONE_NUMBER = $phoneNumber;
     }
     
     /**
